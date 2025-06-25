@@ -11,30 +11,30 @@ public class PasswordGenerator {
         int monthOfBirth;
         int ageOfBirth;
 
-        Scanner inputDate = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Inserisci il tuo nome ");
-        name = inputDate.nextLine();
+        name = input.nextLine();
 
         System.out.print("Inserisci il tuo cognome ");
-        surName = inputDate.nextLine();
+        surName = input.nextLine();
 
         System.out.print("Inserisci il tuo colore ");
-        color = inputDate.nextLine();
+        color = input.nextLine();
 
-        Scanner dateOfBirth = new Scanner(System.in);
+        // Scanner dateOfBirth = new Scanner(System.in);
 
         System.out.print("Inserisci il giorno di nascita ");
-        dayOfBirth = dateOfBirth.nextInt();
+        dayOfBirth = input.nextInt();
 
         System.out.print("Inserisci il mese di nascita ");
-        monthOfBirth = dateOfBirth.nextInt();
+        monthOfBirth = input.nextInt();
 
         System.out.print("Inserisci l'anno di nascita ");
-        ageOfBirth = dateOfBirth.nextInt();
+        ageOfBirth = input.nextInt();
 
-        inputDate.close();
-        dateOfBirth.close();
+        // input.close();
+        input.close();
 
         int datePass = dayOfBirth + monthOfBirth + ageOfBirth;
         String password = name + surName + color + datePass;
